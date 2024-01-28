@@ -46,9 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Categories\Arms.cs" />
+    <Compile Include="Categories\Chest.cs" />
+    <Compile Include="Categories\Back.cs" />
+    <Compile Include="Categories\FisierText.cs" />
+    <Compile Include="Categories\Exercise.cs" />
+    <Compile Include="Categories\Legs.cs" />
+    <Compile Include="Categories\Shoulders.cs" />
+    <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
@@ -79,11 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\sam-sulek.gif" />
-    <None Include="Resources\sam-sulek1.gif" />
-    <Content Include="Resources\steroids.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -33,7 +33,6 @@ namespace Proiect
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label TITLE;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Qwestion = new System.Windows.Forms.Label();
             this.btn_A = new System.Windows.Forms.Button();
             this.btn_B = new System.Windows.Forms.Button();
@@ -47,10 +46,8 @@ namespace Proiect
             this.Chest = new System.Windows.Forms.RadioButton();
             this.Back = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             TITLE = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // TITLE
@@ -72,7 +69,6 @@ namespace Proiect
             this.Qwestion.Size = new System.Drawing.Size(385, 45);
             this.Qwestion.TabIndex = 0;
             this.Qwestion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Qwestion.Click += new System.EventHandler(this.Qwestion_Click);
             // 
             // btn_A
             // 
@@ -120,7 +116,6 @@ namespace Proiect
             this.answer_label.Size = new System.Drawing.Size(329, 23);
             this.answer_label.TabIndex = 5;
             this.answer_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.answer_label.Click += new System.EventHandler(this.label1_Click);
             // 
             // Arms
             // 
@@ -187,34 +182,11 @@ namespace Proiect
             this.Back.UseVisualStyleBackColor = true;
             this.Back.CheckedChanged += new System.EventHandler(this.Back_CheckedChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proiect.Properties.Resources.sam_sulek;
-            this.pictureBox1.Location = new System.Drawing.Point(535, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 400);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(2, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(185, 141);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.Chest);
@@ -230,9 +202,7 @@ namespace Proiect
             this.Controls.Add(this.Qwestion);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,7 +223,6 @@ namespace Proiect
         private System.Windows.Forms.RadioButton Chest;
         private System.Windows.Forms.RadioButton Back;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
